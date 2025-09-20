@@ -1,0 +1,168 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f0f2f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: #4a6ee0;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #ff6b6b;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Header Styles */
+header {
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav ul li a {
+    color: white;
+    font-weight: 500;
+    padding: 0.5rem 0.8rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover, nav ul li a.active {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-container input[type="text"] {
+    padding: 0.6rem 1rem;
+    border: none;
+    border-radius: 20px;
+    width: 250px;
+    font-size: 0.9rem;
+}
+
+.search-container button {
+    background: #ff6b6b;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 0.6rem 1rem;
+    margin-left: -40px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.search-container button:hover {
+    background: #ff5252;
+}
+
+.user-actions {
+    display: flex;
+    gap: 1rem;
+}
+
+.login-btn, .signup-btn {
+    padding: 0.5rem 1.2rem;
+    border-radius: 20px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.login-btn {
+    color: white;
+    border: 1px solid white;
+}
+
+.signup-btn {
+    background-color: #ff6b6b;
+    color: white;
+}
+
+.login-btn:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.signup-btn:hover {
+    background-color: #ff5252;
+}
+
+/* Container Layout */
+.container {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    gap: 1.5rem;
+    max-width: 1400px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    background: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.widget {
+    margin-bottom: 2rem;
+}
+
+.widget h3 {
+    color: #6a11cb;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #f0f2f5;
+}
+
+.widget ul li {
+    margin-bottom: 0.8rem;
+}
+
+.widget ul li a {
+    display: block;
+    padding: 0.5rem;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.widget ul li a:hover {
+    background-color: #f0f2f5;
+    padding-left: 0.8
